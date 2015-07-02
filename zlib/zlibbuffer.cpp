@@ -82,7 +82,7 @@ int ZlibBuffer::underflow()
   }
   else {
     // Continuing where we left off
-    d_zstream.next_in = &d_zinbuffer.front() + BUFFER_SIZE - d_zstream.avail_in;
+    //d_zstream.next_in = &d_zinbuffer.front() + BUFFER_SIZE - d_zstream.avail_in;
   }
 
   d_zstream.avail_out = BUFFER_SIZE;
